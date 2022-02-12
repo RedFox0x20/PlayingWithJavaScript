@@ -32,6 +32,10 @@ h2 {
 
 /* Classes */
 
+.link-glow {
+    color: rgb(223, 170, 223);
+    text-shadow: 0px 0px 10px rgb(223, 170, 223);
+}
 
 .flex-container {
     display: flex;
