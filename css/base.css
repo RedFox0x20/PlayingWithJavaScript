@@ -26,11 +26,17 @@ h1 {
 }
 
 h2 {
-    color: rgb(214, 76, 106);
+    color: rgb(214, 76, 76);
     text-shadow: 0px 0px 15px rgb(214, 76, 106);
 }
 
 /* Classes */
+
+.error {
+    font-size: 2em;
+    color: rgb(189, 27, 27);
+    text-shadow: 0px 0px 15px rgb(189, 27, 27)
+}
 
 .link-glow {
     color: rgb(223, 170, 223);
