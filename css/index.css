@@ -1,4 +1,4 @@
-a {
+.link-button {
     font-size: 2em;
     text-decoration: none;
     color: white;
@@ -6,8 +6,4 @@ a {
 
 a p {
     color: white;
-}
-
-#Links {
-    margin: 50px;
 }
