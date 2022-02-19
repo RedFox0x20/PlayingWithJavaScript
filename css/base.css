@@ -3,7 +3,7 @@
     background-color: black;
     color: white;
 
-    font-family: monospace;
+    font-family: mono;
 
     user-select: none;
 }
@@ -32,6 +32,11 @@ h2 {
 
 /* Classes */
 
+.form {
+    border: solid white 2px;
+    display: block;
+}
+
 .error {
     font-size: 2em;
     color: rgb(189, 27, 27);
@@ -41,6 +46,12 @@ h2 {
 .link-glow {
     color: rgb(223, 170, 223);
     text-shadow: 0px 0px 10px rgb(223, 170, 223);
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
 }
 
 .flex-container {
@@ -55,6 +66,10 @@ h2 {
 
 .margin-auto {
     margin: auto;
+}
+
+.margin-none {
+    margin: 0;
 }
 
 .button {
@@ -89,6 +104,20 @@ h2 {
     width: 50%;
     height: 2px;
     background-color: white;
+}
+
+.vertical-spacer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-center-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-vertical-center {
+    align-items: center;
 }
 
 .content {
