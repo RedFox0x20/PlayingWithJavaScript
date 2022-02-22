@@ -6,6 +6,7 @@ const PasswordLength_Slider_Text = document.getElementById("PasswordLength_Slide
 const Output_Text = document.getElementById("generator-password");
 
 function GeneratePassword() {
+    /* Create a character set to generate our password from using the options provided by the options check boxes */
     let CharacterSet = "";
     if (Options_EnableLowercase.checked) {
         CharacterSet += "abcdefghijklmnopqrstuvwxyz";
@@ -16,12 +17,12 @@ function GeneratePassword() {
     if (Options_Symbols.checked) {
         CharacterSet += "!\"£$%^&*()-_=+[{}];'#:@~,./<>?\\|";
     }
-
     if (CharacterSet == "") {
         Output_Text.innerText = "Couldn't generate a password, not enough options enabled";
         return;
     }
 
+    /* Generate a password based on the character set at random to the length specified on the options slider */
     const Length = PasswordLength_Slider.value;
     let Output = "";
 
@@ -36,6 +37,7 @@ function UpdatePasswordSliderText() {
     PasswordLength_Slider_Text.innerText = "Password length: " + PasswordLength_Slider.value;
 }
 
+/* navigator (window.navigator) provides access to information about the browser, this includes the users clipboard */
 function CopyPasswordToClipboard() {
     navigator.clipboard.writeText(Output_Text.innerText);
     Output_Text.innerText = "Copied";

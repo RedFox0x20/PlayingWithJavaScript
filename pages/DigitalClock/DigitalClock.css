@@ -1,5 +1,6 @@
 #DigitalClock {
+    /* Center the clock to the page and use a nice large font size */
     margin: auto;
-    font-size: 5em;
     text-align: center;
+    font-size: 5em;
 }
