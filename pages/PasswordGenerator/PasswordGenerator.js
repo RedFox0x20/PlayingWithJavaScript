@@ -1,6 +1,7 @@
 const Options_EnableLowercase = document.getElementById("Options_EnableLowercase");
 const Options_UppercaseLetters = document.getElementById("Options_UppercaseLetters");
 const Options_Symbols = document.getElementById("Options_Symbols");
+const Options_Numbers = document.getElementById("Options_Numbers");
 const PasswordLength_Slider = document.getElementById("PasswordLength_Slider");
 const PasswordLength_Slider_Text = document.getElementById("PasswordLength_Slider_Text");
 const Output_Text = document.getElementById("generator-password");
@@ -16,6 +17,9 @@ function GeneratePassword() {
     }
     if (Options_Symbols.checked) {
         CharacterSet += "!\"£$%^&*()-_=+[{}];'#:@~,./<>?\\|";
+    }
+    if (Options_Numbers.checked) {
+        CharacterSet += "0123456789";
     }
     if (CharacterSet == "") {
         Output_Text.innerText = "Couldn't generate a password, not enough options enabled";
