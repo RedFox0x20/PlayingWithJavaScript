@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing with JS</title>
+
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="Modals.css">
+</head>
+
+<body>
+    <header>
+        <a href="../../">
+            <h1>Playing With JavaScript - Modals</h1>
+        </a>
+        <h2>RedFox0x20 - M7TWS</h2>
+    </header>
+    <div class="seperator"></div>
+    <noscript>
+        <p class="error">These pages rely on JavaScript to be enabled to work, please enable JavaScript before going further.<br />Thank-you :)</p>
+        <div class="seperator"></div>
+    </noscript>
+    <div class="content">
+        <h1>Modals</h1>
+        <p>This is a demo page for how we can use plain old HTML, CSS and JavaScript to create a modal!</p>
+        <div id="modal_show_button" class="button" onclick="modal_show()">
+            <p class="button-text">Click me &colon;&rbrack;</p>
+        </div>
+    </div>
+
+    <div id="myModal" class="hidden modal">
+        <div class="modal-content">
+            <div id="modal_close_button" class="modal-close-button" onclick="modal_hide()">X</div>
+            <h1>Hello!</h1>
+            <p>This is the modal!</p>
+        </div>
+    </div>
+
+    <script src="Modals.js"></script>
+</body>
+
+</html>

@@ -128,3 +128,7 @@ h2 {
     display: inline;
     float: right;
 }
+
+.w-min-content {
+    width: min-content;
+}
