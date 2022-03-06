@@ -1,13 +1,18 @@
 /* TODO: Organise this file into a set of logical sections and remove items that do not apply globaly to a websites theme or global display settings. */
 
 /* Basic properties that should be globally applied to all pages */
-:root {
+:root,
+:root[theme='dark'] {
     background-color: black;
     color: white;
 
     font-family: mono;
 
     user-select: none;
+}
+
+:root[theme='purple'] {
+    background-color: rgb(167, 118, 216);
 }
 
 body {

@@ -1,0 +1,4 @@
+/* Themes.css */
+:root[theme='dark'] .dark-hidden {
+    display: none;
+}

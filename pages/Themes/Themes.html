@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing with JS - Themes</title>
+
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="Themes.css">
+</head>
+
+<body>
+    <header>
+        <a href="../../">
+            <h1>Playing With JavaScript - Themes</h1>
+        </a>
+        <h2>RedFox0x20 - M7TWS - <a class="link-glow" href="https://github.com/RedFox0x20/PlayingWithJavaScript">View on GitHub</a></h2>
+    </header>
+    <div class="seperator"></div>
+    <noscript>
+        <p class="error">These pages rely on JavaScript to be enabled to work, please enable JavaScript before going further.<br />Thank-you :)</p>
+        <div class="seperator"></div>
+    </noscript>
+    <div class="content">
+        <h1>Themes</h1>
+        <p>Themes are a common component of modern web browsing.</p>
+        <p>Having different colour options often improves the users experience when browsing and reading text as they can choose the theme with the most comfort for them.</p>
+        <p>Perhaps saving the selected theme would be useful to further improve UX... I'll leave that one to you &colon;&rbrack; <a class="link-glow" href="../Storage/Storage.html">Hint</a></p>
+        <label for="ThemeSelect">Choose a theme</label>
+        <select name="ThemeSelect" id="ThemeSelect" autocomplete="off">
+            <option value="dark">Dark</option>
+            <option value="purple">Purple</option>
+        </select>
+        <p class="dark-hidden">
+            This text was hidden by the dark theme. It's important when using themes that it is done properly using CSS variables.<br>
+            CSS Variables will allow you to set values in the <code>:root</code> which can then be referenced later using <code>var(--variable-name)</code>.<br>
+            &ast; I didn't actually do this here, instead I cheated. However the method of changing the theme is still the same in the <a class="link-glow" href="Themes.js">JavaScript</a>.<br>
+            &ast;&ast; This theme also has really poor contrast so would be a bad idea unless the colour of the text was also changed, this is what CSS variables can be used for!
+        </p>
+    </div>
+
+    <script src="Themes.js"></script>
+</body>
+
+</html>
