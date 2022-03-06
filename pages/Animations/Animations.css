@@ -1,0 +1,87 @@
+/* Animations.css */
+@keyframes changeColor {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: rgb(28, 53, 53);
+    }
+}
+
+#HoverColourChange:hover {
+    animation-name: changeColor;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotatingSquares {
+    0% {
+        top: 0%;
+        left: 0;
+    }
+
+    25% {
+        top: 0%;
+        left: 50%;
+    }
+
+    50% {
+        left: 50%;
+        top: 50%;
+    }
+
+    75% {
+        left: 0%;
+        top: 50%;
+    }
+
+    100% {
+        left: 0%;
+        top: 0%;
+    }
+}
+
+#RotatingSquares {
+    width: 128px;
+    height: 128px;
+    border: solid white 2px;
+}
+
+#RotatingSquareContent {
+    background-color: rgb(84, 84, 197);
+    position: relative;
+    width: 64px;
+    height: 64px;
+
+    border-radius: 50%;
+
+    animation-name: rotatingSquares;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shapeMorph {
+    0% {
+        border-radius: 0%;
+    }
+
+    50% {
+        border-radius: 50%;
+    }
+}
+
+#ShapeMorph {
+    width: 128px;
+    height: 128px;
+    border: solid white 2px;
+
+    animation-name: shapeMorph;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
